@@ -3,3 +3,41 @@
     padding:0;
     list-style: none;
 }
+
+html{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #10141b;
+    color: #fff;
+    width:100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.wizardingLogo{
+    width: 70px;
+    height: 60.38px;
+}
+
+
+.line1, .line2, .line3{
+  width: 25px;
+  height:3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px ;
+    margin-right: 50px;
+}
+
