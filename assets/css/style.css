@@ -15,7 +15,7 @@ body{
     width:100vw;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -39,12 +39,17 @@ header{
     align-items: center;
     margin-left: 50px ;
     margin-right: 50px;
+    
 }
 
 
 .harryPotterLogo{
     width: 350px;
     height: 200px;
+    margin-top: 50px;
+    animation: growUp 1s;
+    transition: ease-in;
+    animation-delay: 0.5s;
 }
 
 .hero_section{
@@ -55,11 +60,15 @@ header{
     flex-direction: column;
     font-size: 18px;
     margin-left:20%;
+    
 }
 
 
 h1{
     font-size:40px;
+    animation: growUp 1s;
+    transition: ease-in;
+    animation-delay: 0.5s;
 }
 
 .btn{
@@ -76,5 +85,37 @@ h1{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     margin-top:40px;
+    animation: growUp 1s;
+    transition: ease-in;
+    animation-delay: 0.5s;
+    
 }
 
+
+.hero_img{
+    position:absolute;
+    z-index:-2;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   
+    
+   
+}
+
+.description{
+    animation: growUp 1s;
+    transition: ease-in;
+    animation-delay: 0.5s;
+
+}
+
+
+@keyframes growUp{
+    0%   { transform:scale(0); }
+  100% { transform:scale(1); }
+}
