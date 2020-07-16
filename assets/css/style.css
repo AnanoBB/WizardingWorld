@@ -12,8 +12,8 @@ html{
 body{
     background-color: #10141b;
     color: #fff;
-    width:100vw;
-    height: 100vh;
+    /* width:100vw;
+    height: 100vh; */
     margin: 0;
     /* overflow: hidden; */
 
@@ -263,10 +263,7 @@ h1{
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
- 
-   
-    
+    left: 0; 
    
 }
 
@@ -286,5 +283,62 @@ h1{
 
 
 
+.audio_img{
+  width: 905.66px;
+  height: 509.42px;
+
+  
+}
+
+.Audio{
+  width: 100%;
+  height:100vh;
+  background-color: hotpink;
+  margin-top: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+
+.Audio_Section{
+  
+  position: absolute;
+  left:800px
+
+}
+
+.littleone{
+  font-family: Bluu Next,serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 42px;
+  color: #f9f4f2;
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+.main_txt{
+    font-family: Bluu Next,serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #f9f4f2;
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+.description2{
+  font-family: Bluu Next,serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 42px;
+  color: #f9f4f2;
+  text-align: left;
+  margin-top: 5px;
+}
 
 
