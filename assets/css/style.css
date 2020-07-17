@@ -342,3 +342,14 @@ h1{
 }
 
 
+.youTube{
+  width: 100%;
+}
+
+
+.youtubeWrapper{
+  height: calc(390,8px * 2);
+  background-color: hotpink;
+}
+
+
