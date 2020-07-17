@@ -348,8 +348,195 @@ h1{
 
 
 .youtubeWrapper{
-  height: calc(390,8px * 2);
+  /* height: 100vh; */
   background-color: hotpink;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
 }
 
+
+.firstTwo{
+  display: flex;
+  flex-direction: column;
+}
+
+.firstTwo div{
+  width:492px;
+  height: 390.8px;
+  background-color: indigo;
+  margin-top: 20px;
+}
+
+
+.secondTwo{
+  display: flex;
+  flex-direction: column;
+  margin-top: 190px;
+}
+
+.secondTwo div{
+  width:492px;
+  height: 390.8px;
+  background-color: indigo;
+  margin-top: 20px;
+
+}
+
+.youTube h2{
+  font-family: Bluu Next,serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #f9f4f2;
+  text-align: left;
+  margin-left: 100px;
+}
+
+footer{
+  height: 515px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    padding: 40px 20px;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+    position: relative;
+    background-color: #10141b;
+    transform: translateZ(1px);
+    z-index: 3;
+    font-family: Sofia Pro,serif;
+    font-weight: 400;
+}
+
+
+.outer{    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #696b78;
+  margin-top: 90px;
+}
+
+
+.inner{
+  max-width: 1240px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upper{
+  height: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+    padding-bottom: 12px;
+    
+}
+
+
+.upper_ul{
+  list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 105px;
+}
+
+.upper_ul li{
+  margin-bottom: 15px;
+    display: flex;
+    font-size: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: left
+}
+
+.logo img{
+  width: 107.99px;
+  height: 80.81px;
+}
+
+
+.divider{
+  border: 2px;
+    height: 1px;
+    width: 100%;
+    background-color: #353643;
+}
+
+
+.lower{
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.textDiv{
+  
+  height: 200px;
+  text-align: left;
+    margin-top: 15px;
+    line-height: 1.33;
+    font-family: Sofia Pro,serif;
+    color: #9fa1ad;
+    padding-left:25px;
+
+}
+
+.tradeMark{
+  font-size: 14px;
+    line-height: 20px;
+    max-width: 702px;
+    width: 100%
+}
+
+.textDiv p{
+  font-size: 14px;
+    line-height: 20px;
+    max-width: 702px;
+    width: 100%;
+    margin: 16px 0;
+    font-weight: 400;
+    font-stretch: normal;
+    line-height: 16px;
+    letter-spacing: .25px;
+    font-size: 12px;
+}
+
+
+.social{
+  display: flex;
+    justify-content: space-between;
+    width: 220px;
+    top: 0;
+    right: 0;
+    margin-top: 19px;
+    padding-right: 25px;
+}
+
+.social li{
+  width: 40px;
+    height: 40px;
+    background-color: #242633;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social li svg path {
+  fill:#fff;
+}
 
