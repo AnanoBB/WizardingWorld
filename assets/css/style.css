@@ -19,6 +19,8 @@ body{
 
 }
 
+
+
 .wizardingLogo{
     width: 70px;
     height: 60.38px;
@@ -349,7 +351,7 @@ h1{
 
 .youtubeWrapper{
   /* height: 100vh; */
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;
@@ -365,7 +367,7 @@ h1{
 .firstTwo div{
   width:492px;
   height: 390.8px;
-  background-color: indigo;
+  background-color: white;
   margin-top: 20px;
 }
 
@@ -540,3 +542,87 @@ footer{
   fill:#fff;
 }
 
+
+/* #canvas1{
+  width: 100%;
+    height: 100%;
+    position: fixed;
+} */
+
+
+
+
+/* overlay form  */
+
+
+#overlay{
+  position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index:4;
+    opacity: .95;
+    cursor: pointer;
+  }
+  
+  .overlay_h{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top:151px;
+  }
+  
+  .overlay_p{
+     margin:28px 40%;
+     font-size:14px;
+     color:#95A5A6;
+     width:280px;
+     text-align:center;
+    
+  }
+  
+  .overlay_form{
+      width: 216px;
+      height:240px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      right:-600px;
+      z-index:3;
+  }
+  
+  input{
+      
+      width:216px;
+      height:30px;
+      border-radius:4px;
+      border:none;
+      background-color: #E8F0F3;
+      color:#B4C4C5;
+      text-align:justify;
+      
+  }
+  .Submit{
+      background-image: linear-gradient(#6AB04C, #BADC58);
+      color:#fff;
+      text-align: center;
+  }
+  
+  .message{
+      height:60px;
+  }
+  
+  .overlay_div{
+      width:216px;
+      height: 240px;
+      text-align: center;
+      margin:auto;
+      display:none;
+  }

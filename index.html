@@ -7,6 +7,8 @@
     <title>Wizarding World</title>
 </head>
 <body>
+    <!-- <canvas id="canvas1"></canvas> -->
+   
     <header>
         <!-- <div class="burger_menu">
             <div class="line1"></div>
@@ -32,8 +34,33 @@
           </div>
         
         <img src="assets/media/WizardingWorld.png" class="wizardingLogo">
-        <button type="button">LOGIN</button>
+        <button type="button" onclick="openForm()" id="btn">LOGIN</button>
     </header>
+
+
+    <div id="overlay"  style="display: none;"> 
+        <h1 class="overlay_h">Booking Form</h1>
+        <p class="overlay_p">Includes Michelin Pilot Sport 4S tires,larger,
+        more powerful brakes and lowerd
+        </p>
+        <form class="overlay_form">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="number" name="Phone" placeholder="Phone">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="message" placeholder="Message" class="message">
+            <input type="submit" value="Send" class="Submit" id="submit"> 
+        </form>
+        <div class="overlay_div">
+                <div class="check_overlay">
+                  <img src="assets/images/Check.png">
+                  <p>Thank You!
+                    Your message has been send successfully.
+                  </p>
+    
+                </div>
+    
+              </div>
+    </div>
 
     <section class="hero_section">
         <img class="hero_img" src="./assets/media/isabella-martine-UO_X0-zmfmw-unsplash.jpg">
@@ -76,8 +103,10 @@
         <h2>Video trailers</h2>
         <div class="youtubeWrapper">
             <div class="firstTwo">
-                <div></div>
-                <div></div>
+                <div><iframe width="492" height="390" src="https://www.youtube.com/embed/VyHV0BRtdxo">
+                </iframe></div>
+                <div><iframe width="492" height="390" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe></div>
             </div>
             <div class="secondTwo">
                 <div></div>
