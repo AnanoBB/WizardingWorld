@@ -1,7 +1,7 @@
 let url = 'http://hp-api.herokuapp.com/api/characters';
 
 fetch(url).then(res => res.json()).then(data => {
-    for(i = 0; i < 25; i++){
+    for(i = 0; i < 24; i++){
 
         let div = document.createElement('div');
         div.id = "characters";
@@ -31,7 +31,7 @@ fetch(url).then(res => res.json()).then(data => {
 
         
 
-        for(j = 0; j < 25; j++){
+        for(j = 0; j < 24; j++){
             if(j == 0){
                 name.innerHTML = data[i].name;
                 img.src = data[i].image;
