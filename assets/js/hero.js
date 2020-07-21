@@ -156,4 +156,24 @@ function openForm(){
 // )
 
 
+function validateForm() {
+  var x = document.forms["login"]["email"].value;
+  let password = document.forms['login']['password'].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
 
+  if(password.length < 6) {
+    alert('Password must be at least 6 charchters long')
+  }
+  if(password === ''){
+    alert('Field must be filled out')
+  }
+  if(password == password.toLowerCase()){
+    alert('There must be at least one upperCase')
+  }
+  else{
+    alert('Password has been successfulyy chosen ')
+  }
+}
