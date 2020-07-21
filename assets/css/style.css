@@ -682,7 +682,7 @@ footer{
 
 
   .hero{
-    margin-top: 450px ;
+    margin-top: 350px ;
   }
 
 
@@ -705,11 +705,15 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 315px;
+    text-align: center;
   }
 
   .h1 h1{
     font-size: 35px;
     line-height: 43px;
+    width: 315px;
+    margin-bottom: 40px;
   }
 
   .formAuth{
@@ -725,6 +729,7 @@ footer{
     align-items: center;
     justify-content: center;
     width: 100%;
+    
     /* width: 311px; */
   }
 
@@ -798,12 +803,39 @@ footer{
   .Button_btnPrimary__g_WP5 {
     color: #3a372e;
     background-color: #cec094;
+    border-radius: 30px;
+    border-width: 0;
+    min-width: 200px;
+    display: inline-block;
+    text-align-last: center;
+    font-family: Sofia Pro,serif;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 1.1px;
+    transition: background-color .3s ease-in-out;
+    height: 48px;
+    width: 311px;
+
 
 
   }
 
   .form-header{
     height: 20%;
+  }
+
+
+  .input-txt{
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    background: inherit;
+    padding: 18px 20px 14px;
+    margin: 8px 0;
+    border: 1px solid hsla(0,0%,59.2%,.2);
+    border-radius: 3px;
+    transition: border .3s ease-in-out;
+    width: 311px;
   }
 
   /* #canvas1{
