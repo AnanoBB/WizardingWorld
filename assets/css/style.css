@@ -774,10 +774,10 @@ footer{
 
 
 
-  @media  (max-width: 320px){
+  @media   (max-width: 320px){
     body{
       display: block;
-      /* overflow: hidden; */
+      
     }
 
     .hero_img{
@@ -1003,7 +1003,6 @@ font-size: 14px;
   line-height: 20px;
   max-width: 702px;
   width: 100%;
-  /* margin: 16px 0; */
   font-weight: 400;
   font-stretch: normal;
   line-height: 10px;
@@ -1038,5 +1037,10 @@ width: 40px;
 fill:#fff;
 }
 
+.hero_reviews h1{
+  font-size: 60px;
+}
 
 }
+
+
