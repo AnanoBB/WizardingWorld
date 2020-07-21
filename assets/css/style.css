@@ -30,18 +30,6 @@ body{
 }
 
 
-/* .burger_menu{
-    position: fixed;
-
-}
-
-
-.line1, .line2, .line3{
-  width: 25px;
-  height:3px;
-  background-color: #fff;
-  margin: 6px 0;
-} */
 
 
 
@@ -252,8 +240,8 @@ h1{
     margin-top:40px;
     animation: growUp 1s;
     transition: ease-in;
-   
-    animation-timing-function: ease-in-out;
+    border: 0; 
+    animation-timing-function: ease-in-out; 
     
 }
 
@@ -398,8 +386,10 @@ h1{
   margin-left: 100px;
 }
 
+
+/* footer */
 footer{
-  height: 515px;
+    height: 515px;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -416,7 +406,8 @@ footer{
 }
 
 
-.outer{    display: flex;
+.outer{  
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #696b78;
@@ -437,7 +428,7 @@ footer{
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-    padding-bottom: 12px;
+  padding-bottom: 12px;
     
 }
 
@@ -552,82 +543,6 @@ footer{
 } */
 
 
-
-
-/* overlay form  */
-
-
-#overlay{
-  position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    z-index:4;
-    opacity: .95;
-    cursor: pointer;
-  }
-  
-  .overlay_h{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     margin-top:151px;
-  }
-  
-  .overlay_p{
-     margin:28px 40%;
-     font-size:14px;
-     color:#95A5A6;
-     width:280px;
-     text-align:center;
-    
-  }
-  
-  .overlay_form{
-      width: 216px;
-      height:240px;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      position: relative;
-      right:-600px;
-      z-index:3;
-  }
-  
-  input{
-      
-      width:216px;
-      height:30px;
-      border-radius:4px;
-      border:none;
-      background-color: #E8F0F3;
-      color:#B4C4C5;
-      text-align:justify;
-      
-  }
-  .Submit{
-      background-image: linear-gradient(#6AB04C, #BADC58);
-      color:#fff;
-      text-align: center;
-  }
-  
-  .message{
-      height:60px;
-  }
-  
-  .overlay_div{
-      width:216px;
-      height: 240px;
-      text-align: center;
-      margin:auto;
-      display:none;
-  }
 
 
   /* hero statistics  */
@@ -856,3 +771,272 @@ footer{
   left:0;
   z-index: -2;
   } */
+
+
+
+  @media  (max-width: 320px){
+    body{
+      display: block;
+      /* overflow: hidden; */
+    }
+
+    .hero_img{
+      position:absolute;
+      z-index:-2;
+      width: 100%;
+      height:100vh;
+      object-fit: cover;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; 
+     
+  }
+
+
+
+  .hero_section{
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 15px;
+  margin-left:10px;
+  
+  }
+
+
+  .btn{
+    width:220px;
+    height: 42px;
+    background-color: #6b63b5;
+    color:#fff;
+    font-size:14px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top:40px;
+    animation: growUp 1s;
+    transition: ease-in;
+    border: 0; 
+    animation-timing-function: ease-in-out; 
+    
+}
+
+
+h1{
+  font-size: 20px;
+}
+
+
+.harryPotterLogo{
+  width: 250px;
+  height: 100px;
+  margin-top: 37px;
+}
+
+.wizardingLogo{
+  margin-left: 40%;
+  margin-right: 9%;
+}
+
+
+.audio_img{
+  width: 320px;
+  height: 180px;
+}
+
+.Audio_Section{
+
+      /* position: absolute; */
+      left: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 200px;
+      align-items: center;
+}
+
+.main_txt{
+  font-size: 20px;
+}
+
+
+.youtubeWrapper{
+  flex-wrap: wrap;
+}
+
+.firstTwo div{
+  width: 260px;
+  height: 260px ;
+}
+
+.iframe{
+  width: 260px;
+  height: 260px;
+}
+
+.secondTwo{
+  margin-top: 0;
+}
+.secondTwo div{
+  width: 260px;
+  height: 260px ;
+  
+}
+
+
+footer{
+  height: 515px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  padding: 40px 20px;
+  text-align: center;
+  line-height: 1;
+  font-size: 10px;
+  position: relative;
+  background-color: #10141b;
+  transform: translateZ(1px);
+  z-index: 3;
+  font-family: Sofia Pro,serif;
+  font-weight: 400;
+}
+
+
+.outer{  
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 1px solid #696b78;
+margin-top: 90px;
+}
+
+
+.inner{
+max-width: 1240px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.upper{
+height: 192px;
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
+width: 100%;
+padding-bottom: 12px;
+  
+}
+
+
+.upper_ul{
+list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 105px;
+}
+
+.upper_ul li{
+margin-bottom: 15px;
+  display: flex;
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  text-align: left
+}
+
+.logo img{
+width: 90px;
+height: 70px;
+margin-left: 12%;
+}
+
+
+.divider{
+border: 2px;
+  height: 1px;
+  width: 100%;
+  background-color: #353643;
+}
+
+
+.lower{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.textDiv{
+
+height: 200px;
+text-align: left;
+  margin-top: 15px;
+  line-height: 1.33;
+  font-family: Sofia Pro,serif;
+  color: #9fa1ad;
+  padding-left:25px;
+
+}
+
+.tradeMark{
+font-size: 14px;
+  line-height: 20px;
+  max-width: 702px;
+  width: 100%
+}
+
+.textDiv p{
+font-size: 14px;
+  line-height: 20px;
+  max-width: 702px;
+  width: 100%;
+  /* margin: 16px 0; */
+  font-weight: 400;
+  font-stretch: normal;
+  line-height: 10px;
+  letter-spacing: .25px;
+  font-size: 12px;
+}
+
+
+.social{
+display: flex;
+  justify-content: space-between;
+  width: 220px;
+  top: 0;
+  right: 0;
+  margin-top: 19px;
+  padding-right: 25px;
+}
+
+.social li{
+width: 40px;
+  height: 40px;
+  background-color: #242633;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.social li svg path {
+fill:#fff;
+}
+
+
+}
