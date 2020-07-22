@@ -17,7 +17,7 @@ body{
     height: 100vh; */
     margin: 0;
     height: 100%;
-    /* overflow: hidden; */
+
 
 }
 
@@ -38,7 +38,7 @@ body{
     top: 0px;
     left: 0;
     z-index: 1;
-    /* margin-top: 10px;  */
+  
     
   }
   
@@ -62,7 +62,6 @@ body{
     width: 25px;
     height: 3px;
     padding: 1rem;
-    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +122,7 @@ body{
   
   .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+   
   }
   
   .menu-wrap .toggler:checked ~ .menu > div > div {
@@ -141,7 +140,7 @@ body{
     overflow: hidden;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+
   }
   
   .menu-wrap .menu > div {
@@ -177,9 +176,6 @@ body{
     transition: color 0.4s ease;
   }
   
-  .menu-wrap .menu > div > div > ul > li > a:hover {
-    color: var(--secondary-color);
-  }
 
 
 header{
@@ -199,8 +195,7 @@ header{
     height: 200px;
     margin-top: 50px;
     animation: growUp 1s;
-    transition: ease-in;
-   
+    transition: ease-in; 
     animation-timing-function: ease-in-out;
 }
 
@@ -220,7 +215,6 @@ h1{
     font-size:40px;
     animation: growUp 1s;
     transition: ease-in;
-  
     animation-timing-function: ease-in-out;
 }
 
@@ -262,7 +256,6 @@ h1{
 .description{
     animation: growUp 1s;
     transition: ease-in;
-  
     animation-timing-function: ease-in-out;
 
 }
@@ -313,7 +306,7 @@ h1{
 
 
 .main_txt{
-    font-family: Bluu Next,serif;
+  font-family: Bluu Next,serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 42px;
@@ -340,10 +333,7 @@ h1{
 
 
 .youtubeWrapper{
-  /* height: 100vh; */
-  /* background-color: hotpink; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
 }
@@ -371,7 +361,6 @@ h1{
 .secondTwo div{
   width:492px;
   height: 390.8px;
-  background-color: indigo;
   margin-top: 20px;
 
 }
@@ -392,14 +381,12 @@ footer{
     height: 515px;
     padding-left: 50px;
     padding-right: 50px;
-
     padding: 40px 20px;
     text-align: center;
     line-height: 1;
     font-size: 10px;
     position: relative;
     background-color: #10141b;
-    transform: translateZ(1px);
     z-index: 3;
     font-family: Sofia Pro,serif;
     font-weight: 400;
@@ -536,14 +523,6 @@ footer{
 }
 
 
-/* #canvas1{
-  width: 100%;
-    height: 100%;
-    position: fixed;
-} */
-
-
-
 
   /* hero statistics  */
 
@@ -659,7 +638,7 @@ footer{
   }
 
 
-  .Auth_inputContainer__2yTId>label{
+  .Auth_inputContainer>label{
     margin-top: 20px;
   }
 
@@ -689,23 +668,17 @@ footer{
     letter-spacing: 1.1px
   }
 
-  .SignInForm_forgotPasswordLink__2yEyC{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
 
-  .SignInForm_createAccountTxt__2qL5U, .SignInForm_forgotPasswordLink__2yEyC button{
+  .SignInForm_createAccountTxt button{
     line-height: 1.67;
     font-size: .75rem;
     color: #fff;
   }
 
-  .Auth_btnContainer__34Wck{
+  .Auth_btnContainer{
     width: 100%;
     padding: 0;
-    margin-top: 20px!important;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -713,7 +686,7 @@ footer{
   }
 
 
-  .Button_btnPrimary__g_WP5 {
+  .Button_btnPrimary{
     color: #3a372e;
     background-color: #cec094;
     border-radius: 30px;

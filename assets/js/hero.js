@@ -1,14 +1,17 @@
 let url = 'http://hp-api.herokuapp.com/api/characters';
 
-fetch(url).then(res => res.json()).then(data => {
-    for(i = 0; i < 24; i++){
-
+fetch(url).then(result => result.json()).then(data => {
+    // for ვატრიალბთ იმიტომ რომ არის 24 ელემენტის 
+    for(i = 0; i < data.length - 1; i++){
+        //  24 ჯერ ქმნის divs
         let div = document.createElement('div');
         div.id = "characters";
 
         // div.style = "background: red; width: 600px; height: 500px; margin-top: 10px;";
+        
 
-        document.getElementsByClassName('divSection')[0].appendChild(div);
+        //  ???[0]
+        document.getElementsByClassName('divSection')[0].appendChild(div); 
 
         let name = document.createElement('h2');
         let img = document.createElement('img');
@@ -23,15 +26,12 @@ fetch(url).then(res => res.json()).then(data => {
     
 
 
-        // anc.style = "margin-left: 300px; margin-top: -500px";
-        // wandwood.style = "margin-left: 300px;";
-        // wandcore.style = "margin-left: 300px;";
-        // pat.style = "margin-left: 300px;";
         img.style = "width: 300px; height: 300px;";
 
         
 
-        for(j = 0; j < 24; j++){
+        for(j = 0; j < data.length - 1; j++){
+          // პირველ იტერაციაზე რომ დამიტოს 
             if(j == 0){
                 name.innerHTML = data[i].name;
                 img.src = data[i].image;
@@ -44,6 +44,7 @@ fetch(url).then(res => res.json()).then(data => {
                 pat.innerHTML = data[i].patronus;
             }  
         }
+
         div.append(name);
         div.append(img);
         div.append(spc);
@@ -57,21 +58,7 @@ fetch(url).then(res => res.json()).then(data => {
 });
 
 
-function openForm(){
-    let btn = document.getElementById('btn');
-    let click = document.getElementById('overlay');
-    if(click.style.display=="none"){
-      click.style.display = "block";
-    }
-    else{
-      click.style.display = 'none';
-    }
-    if (btn.textContent === "LOGIN") {
-      btn.textContent = "X";
-    } else {
-      btn.textContent = "LOGIN";
-    }
-  }
+
 
 
 
@@ -174,6 +161,6 @@ function validateForm() {
     alert('There must be at least one upperCase')
   }
   else{
-    alert('Password has been successfulyy chosen ')
+    alert('Password has been successfuly chosen ')
   }
 }
