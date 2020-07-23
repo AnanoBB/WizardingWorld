@@ -1,3 +1,14 @@
+
+@font-face{
+  font-family: 'Sofia-Regular';
+  src:url(//assets/media/Sofia/Sofia-Regular.ttf)
+}
+
+@font-face{
+  font-family: 'HennyPenny-Regular';
+  src:url(//assets/media/Henny_Penny/HennyPenny-Regular.ttf)
+}
+
 *{
     margin:0;
     padding:0;
@@ -253,6 +264,7 @@ h1{
     animation: growUp 1s;
     transition: ease-in;
     animation-timing-function: ease-in-out;
+    font-family: 'HennyPenny-Regular';
 
 }
 
@@ -291,7 +303,7 @@ h1{
 }
 
 .littleone{
-  font-family: Bluu Next,serif;
+  font-family: 'HennyPenny-Regular';
   font-weight: 700;
   font-size: 25px;
   line-height: 42px;
@@ -302,7 +314,7 @@ h1{
 
 
 .main_txt{
-  font-family: Bluu Next,serif;
+
   font-weight: 700;
   font-size: 40px;
   line-height: 42px;
@@ -313,7 +325,7 @@ h1{
 
 
 .description2{
-  font-family: Bluu Next,serif;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 42px;
@@ -362,7 +374,6 @@ h1{
 }
 
 .youTube h2{
-  font-family: Bluu Next,serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 42px;
@@ -384,7 +395,7 @@ footer{
     position: relative;
     background-color: #10141b;
     z-index: 3;
-    font-family: Sofia Pro,serif;
+    font-family: 'Sofia-Regular';
     font-weight: 400;
 }
 
@@ -465,7 +476,7 @@ footer{
   text-align: left;
     margin-top: 15px;
     line-height: 1.33;
-    font-family: Sofia Pro,serif;
+    font-family: 'Sofia-Regular';
     color: #9fa1ad;
     padding-left:25px;
 
@@ -647,7 +658,7 @@ footer{
     letter-spacing: 1.5px!important;
     display: inherit;
     line-height: 1.33!important;
-    font-family: Sofia Pro,serif;
+    font-family: 'Sofia-Regular' ;
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: 1.1px;
@@ -658,7 +669,6 @@ footer{
     font-size: 11px;
     color: #fff;
     position: relative;
-    font-family: Mason Sans OT,serif;
     font-weight: 700;
     line-height: 1.08;
     letter-spacing: 1.1px
@@ -690,7 +700,7 @@ footer{
     min-width: 200px;
     display: inline-block;
     text-align-last: center;
-    font-family: Sofia Pro,serif;
+    font-family: 'Sofia-Regular';
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: 1.1px;
@@ -873,7 +883,7 @@ footer{
   background-color: #10141b;
   transform: translateZ(1px);
   z-index: 3;
-  font-family: Sofia Pro,serif;
+  font-family: 'Sofia-Regular';
   font-weight: 400;
 }
 
@@ -954,7 +964,7 @@ height: 200px;
 text-align: left;
   margin-top: 15px;
   line-height: 1.33;
-  font-family: Sofia Pro,serif;
+  font-family: 'Sofia-Regular';
   color: #9fa1ad;
   padding-left:25px;
 
@@ -1138,7 +1148,7 @@ position: relative;
 background-color: #10141b;
 transform: translateZ(1px);
 z-index: 3;
-font-family: Sofia Pro,serif;
+font-family: 'Sofia-Regular';
 font-weight: 400;
 }
 
@@ -1219,7 +1229,7 @@ height: 200px;
 text-align: left;
 margin-top: 15px;
 line-height: 1.33;
-font-family: Sofia Pro,serif;
+font-family: 'Sofia-Regular';
 color: #9fa1ad;
 padding-left:25px;
 
