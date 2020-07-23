@@ -1,16 +1,12 @@
 let url = 'http://hp-api.herokuapp.com/api/characters';
 
 fetch(url).then(result => result.json()).then(data => {
-    // for ვატრიალბთ იმიტომ რომ არის 24 ელემენტის 
+   
     for(i = 0; i < data.length - 1; i++){
-        //  24 ჯერ ქმნის divs
+      
         let div = document.createElement('div');
         div.id = "characters";
 
-        // div.style = "background: red; width: 600px; height: 500px; margin-top: 10px;";
-        
-
-        //  ???[0]
         document.getElementsByClassName('divSection')[0].appendChild(div); 
 
         let name = document.createElement('h2');
@@ -31,7 +27,7 @@ fetch(url).then(result => result.json()).then(data => {
         
 
         for(j = 0; j < data.length - 1; j++){
-          // პირველ იტერაციაზე რომ დამიტოს 
+         
             if(j == 0){
                 name.innerHTML = data[i].name;
                 img.src = data[i].image;
@@ -58,89 +54,6 @@ fetch(url).then(result => result.json()).then(data => {
 });
 
 
-
-
-
-
-// const canvas = document.getElementById('canvas1');
-
-// console.log(canvas);
-
-// const ctx = canvas.getContext('2d');
-
-// ctx.canvas.width = window.innerWidth;
-// ctx.canvas.height = window.innerHeight;
-
-// let particleArray;
-
-// function Particle(x, y, directionX,directionY, size, color){
-//   this.x = x;
-//   this.y = y;
-//   this.directionX = directionX;
-//   this.directionY = directionY;
-//   this.size = size;
-//   this.color = color;
-// }
-
-
-// Particle.prototype.draw = function(){
-//   ctx.beginPath();
-//   ctx.arc(this.x, this.y , this.size ,0 , Math.PI * 2, false)
-//     ctx.fillStyle = this.color;
-//     ctx.fill();
-  
-// }
-
-// // const particle1 = new Particle(10,10,1,1,20,'white');
-// // particle1.draw();
-
-// Particle.prototype.update = function(){
-//   if(this.x + this.size > canvas.width  || this.x - this.size < 0){
-//     this.directionX = -this.directionX;
-//   }
-//   if(this.y + this.size  > canvas.height || this.y - this.size < 0 ){
-//     this.directionY = -this.directionY;
-//   }
-//   this.x += this.directionX;
-//   this.y += this.directionY;
-//   this.draw();
-// };
-
-
-// function init(){
-// particleArray = [];
-// for(let i=0; i<500;i++){
-//   let size = Math.random() * 10;
-//   let x = Math.random() * (innerWidth - size * 2);
-//   let y = Math.random() * (innerHeight - size * 2) ;
-//   let directionX = (Math.random() * .4 ) - .2 ;
-//   let directionY = (Math.random() * .4) - .2;
-//   let color = 'white';
-
-//   particleArray.push(new Particle(x, y , directionX, directionY,size,color) )
-//  }
-// }
-
-
-// function animate(){
-// requestAnimationFrame(animate);
-// ctx.clearRect(0,0, innerHeight ,innerWidth);
-
-// for(let i=0; i < particleArray.length;i++ ){
-//   particleArray[i].update()
-// }
-// }
-
-// init();
-// animate();
-
-// window.addEventListener('resize',
-// function(){
-//   canvas.width = innerWidth;
-//   canvas.height = innerHeight;
-//   init()
-// }
-// )
 
 
 function validateForm() {
